@@ -1,0 +1,26 @@
+Your code should now look like this whole calendar04.01
+
+Ref Project:
+===========
+	-- FormBasedAuthentication
+
+Goals
+=====
+	-- This application uses Spring Security's Default Schema (USERS, AUTHORITIES) using JdbcDaoImpl and JdbcUserDetailsManager.
+   	-- Signup & sign-in
+   	-- New CalendarUser is created when new Spring Security user is created.
+   	     
+Modified/Added Files
+====================
+    -- src/main/resources/database/h2/security-schema.sql  			[new]
+    -- src/main/resources/database/h2/security-users.sql  			[new]
+    -- src/main/resources/database/h2/security-user-authorities.sql [new]
+    -- DataSourceConfig.java										[modified]
+    -- SecurityConfig.java		 									[modified]
+    -- DefaultCalendarService.java									[modified]
+    -- CalendarUserContext.java										[modified]
+    -- header.html													[modified]
+    -- templates/signup/form.html									[new]
+
+	
+

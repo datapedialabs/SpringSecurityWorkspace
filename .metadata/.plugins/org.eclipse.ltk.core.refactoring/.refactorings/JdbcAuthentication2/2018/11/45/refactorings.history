@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;JdbcAuthentication2&apos;&#x0D;&#x0A;- Original project: &apos;JdbcAuthentication2&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     security-schema.sql&#x0D;&#x0A;     security-user-authorities.sql&#x0D;&#x0A;     security-users.sql" description="Delete elements" element1="src/main/resources/database/h2/security-schema.sql" element2="src/main/resources/database/h2/security-users.sql" element3="src/main/resources/database/h2/security-user-authorities.sql" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="3" stamp="1541400050864" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,33 @@
+Your code should now look like this whole calendar02
+
+Ref Project:
+===========
+	-- InSecureJbcpCalendar
+
+Goals
+=====
+   -- Apply a minimal Spring Security configuration
+   -- Spring Security Default login page
+   -- Understanding Login Internal Flow
+   -- Customized login Page
+   -- Logout Configuration
+   -- Role Based authorization
+   -- Access Denied Handling
+   -- SpEL Authorization
+   -- Conditional Display
+   -- Customizing behavior after login
+   -- Customize My Events page display
+    
+Modified/Added Files
+====================
+	-- build.gradle 			[modified]
+	-- SecurityConfig.java 		[New]
+	-- ThymeleafConfig.java		[modified]
+	-- DefaultController.java	[New]
+	-- aspirelogin.html			[New]
+	-- 403.html					[New]
+	-- header.html				[modified]
+
+
+	
+

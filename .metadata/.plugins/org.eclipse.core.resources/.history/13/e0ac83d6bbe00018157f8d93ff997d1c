@@ -1,0 +1,36 @@
+Your code should now look like this whole calendar03
+
+Ref Project:
+============
+	-- FormBasedAuthentication
+
+Goals
+=====
+	-- In-Memory Authentication. In this project we will not use spring security default schema (USERS, AUTHORITIES, etc).
+	-- Sign Up (New entry added to In-Memory map object and new record inserted to CALENDAR_USERS table in database).
+	-- Customize UserDetailsService
+	-- Customize AuthenticationProvider    
+	
+    
+Modified/Added Files
+====================
+	-- SecurityConfig.java						[modified]
+	-- DefaultCalendarService.java				[modified]
+	-- CalendarUserAuthorityUtils.java			[new]
+	-- CalendarUserContext.java					[modified]
+	-- SignupController.java					[new]
+	-- SignupForm.java							[new]
+	-- templates/fragments/header.html			[modified]
+	-- templates/signup/form.html				[new]
+	-- CalendarUserDetailsService.java			[new]
+	
+	-- DataSourceConfig.java					[modified]
+	-- CalendarUserAuthenticationProvider.java 	[new]
+	
+
+	
+	
+
+
+	
+

@@ -1,0 +1,43 @@
+package com.packtpub.springsecurity.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.packtpub.springsecurity.dataaccess.CalendarUserDao;
+import com.packtpub.springsecurity.domain.CalendarUser;
+
+/**
+ * Returns the same user for every call to {@link #getCurrentUser()}. This is
+ * used prior to adding security, so that the rest of the application can be
+ * used.
+ *
+ * @author Rob Winch
+ */
+@Component
+public class CalendarUserContext implements UserContext {
+	private final CalendarService calendarService;
+	/**
+	 * The {@link CalendarUser#getId()} for the user that is representing the
+	 * currently logged in user. This can be modified using
+	 * {@link #setCurrentUser(CalendarUser)}
+	 */
+	private int currentUserId = 0;
+
+	@Autowired
+	public CalendarUserContext(CalendarService userService) {
+		if (userService == null) {
+			throw new IllegalArgumentException("userService cannot be null");
+		}
+		this.calendarService = userService;
+	}
+
+	@Override
+	public CalendarUser getCurrentUser() {
+		return calendarService.getUser(currentUserId);
+	}
+
+	@Override
+	public void setCurrentUser(CalendarUser user) { 
+        throw new UnsupportedOperationException();
+	}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="LdapAuthentication"/>
+<aop-project name="InMemoryAuthentication"/>
+<aop-project name="JdbcAuthentication_CustomSchema"/>
+<aop-project name="JdbcAuthentication3"/>
+<aop-project name="JdbcAuthentication_Salt"/>
+<aop-project name="FormBasedAuthentication"/>
+<aop-project name="LdapAuthentication_PasswordEncoder"/>
+<aop-project name="DigitalCertificates"/>
+<aop-project name="JdbcAuthentication2"/>
+<aop-project name="InSecureJbcpCalendar"/>
+<aop-project name="JdbcAuthentication"/>
+<aop-project name="JdbcAuthentication_GBAC"/>
+<aop-project name="OAuth2"/>
+<aop-project name="JdbcAuthentication_PasswordEncoder"/>
+</aop-reference-model>

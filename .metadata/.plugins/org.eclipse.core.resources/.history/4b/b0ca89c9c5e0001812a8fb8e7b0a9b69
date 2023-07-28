@@ -1,0 +1,21 @@
+Ref Project:
+===========
+	-- JdbcAuthentication
+
+Goals
+=====
+	-- Customize UserDetailsService
+	-- No more built-in spring security schema
+
+   	     
+Modified/Added Files
+====================
+	-- CalendarUserDetailsService.java		[new]
+	-- CalendarUserAuthorityUtils.java		[new]
+	-- DataSourceConfig.java				[modified]
+	-- SecurityConfig.java					[modified]
+	-- DefaultCalendarService.java 			[modified]
+	-- security-schema.sql					[removed]
+	-- security-users.sql 					[removed]
+	-- security-user-authorities.sql 		[removed]
+	

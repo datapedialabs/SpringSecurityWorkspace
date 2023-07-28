@@ -1,0 +1,49 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.12.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'edu.aspire'
+version = '1'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-jdbc')
+	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile ('org.codehaus.jackson:jackson-mapper-asl:1.9.10')
+	runtime('com.h2database:h2:1.4.187')
+	
+	//Basic authentication
+	compile('org.springframework.boot:spring-boot-starter-security')
+	compile 'org.thymeleaf.extras:thymeleaf-extras-springsecurity4'
+	
+	//Spring Security Ldap dependencies
+	compile("org.springframework.security:spring-security-ldap") 
+	compile("org.springframework.ldap:spring-ldap-core")
+	compile('org.springframework.boot:spring-boot-starter-data-ldap')
+	compile("org.springframework:spring-tx")
+	compile("com.unboundid:unboundid-ldapsdk")
+	
+	//Apache DS Ldap server
+	compile 'org.apache.directory.server:apacheds-core:2.0.0-M23'
+	compile 'org.apache.directory.server:apacheds-protocol-ldap:2.0.0-M23'
+	compile 'org.apache.directory.server:apacheds-protocol-shared:2.0.0-M23'  
+	
+}
